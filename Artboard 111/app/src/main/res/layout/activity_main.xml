@@ -20,6 +20,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -29,30 +30,35 @@
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="match_parent"
-                    android:layout_height="212dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="-2dp"
                     android:alpha=".96"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
                     app:srcCompat="@drawable/artboardtopone" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:padding="32dp"
                     android:text="Question Papers"
+                    android:fontFamily="@font/myrbold"
                     android:textAllCaps="false"
                     android:textColor="#fff"
                     android:textSize="32dp"
-                    android:textStyle="normal" />
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
+
                     app:srcCompat="@drawable/humburgermenu" />
 
             </RelativeLayout>
@@ -77,11 +83,13 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:text="-----Select Course-----"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:fontFamily="@font/myrreg"
+                    android:textStyle="normal" />
 
                 <ImageView
                     android:layout_width="60dp"
@@ -101,11 +109,13 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:text="-----Select Semester-----"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:fontFamily="@font/myrreg"
+                    android:textStyle="normal" />
 
                 <ImageView
                     android:layout_width="60dp"
@@ -125,11 +135,13 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:text="-----Select Subject-----"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:fontFamily="@font/myrreg"
+                    android:textStyle="normal" />
 
                 <ImageView
                     android:layout_width="60dp"
@@ -149,11 +161,14 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:text="-----Select Year-----"
                     android:textAlignment="center"
-                    android:textSize="25sp" />
+                    android:fontFamily="@font/myrreg"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
 
                 <ImageView
                     android:layout_width="60dp"
