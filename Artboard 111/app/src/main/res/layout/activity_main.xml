@@ -45,19 +45,19 @@
                     android:autoSizeTextType="uniform"
                     android:fontFamily="@font/myrbold"
                     android:gravity="center"
-                    android:padding="32dp"
+                    android:padding="10dp"
                     android:text="Question Papers"
                     android:textAllCaps="false"
                     android:textColor="#fff"
-                    android:textSize="32dp"
+                    android:textSize="28dp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_height="28dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="16dp"
                     android:src="@drawable/ic_baseline_menu_24" />
 
             </RelativeLayout>
@@ -85,12 +85,14 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/myrreg"
                     android:gravity="center"
-                    android:paddingLeft="10dp"
-                    android:text="-----Select Course-----"
+                    android:padding="5dp"
+                    android:text="Select Course"
                     android:textAlignment="center"
                     android:textSize="25sp"
+
                     android:textStyle="normal" />
 
                 <ImageView
@@ -114,12 +116,14 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/myrreg"
                     android:gravity="center"
-                    android:paddingLeft="10dp"
-                    android:text="-----Select Semester-----"
+                    android:padding="5dp"
+                    android:text="Select Semester"
                     android:textAlignment="center"
                     android:textSize="25sp"
+
                     android:textStyle="normal" />
 
                 <ImageView
@@ -143,12 +147,14 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/myrreg"
                     android:gravity="center"
-                    android:paddingLeft="10dp"
-                    android:text="-----Select Subject-----"
+                    android:padding="5dp"
+                    android:text="Select Subject"
                     android:textAlignment="center"
                     android:textSize="25sp"
+
                     android:textStyle="normal" />
 
                 <ImageView
@@ -172,12 +178,14 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/myrreg"
                     android:gravity="center"
-                    android:paddingLeft="10dp"
-                    android:text="-----Select Year-----"
+                    android:padding="5dp"
+                    android:text="Select Year"
                     android:textAlignment="center"
                     android:textSize="25sp"
+
                     android:textStyle="normal" />
 
                 <ImageView
@@ -195,7 +203,8 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/greenback"
                 android:padding="5dp"
-                android:text="Submit" />
+                android:text="Submit"
+                android:textColor="#fff" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
