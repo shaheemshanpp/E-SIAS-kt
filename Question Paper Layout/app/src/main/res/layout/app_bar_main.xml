@@ -7,14 +7,6 @@
     android:background="#051328"
     tools:context=".Main3Activity">
 
-    <!--    <com.google.android.material.navigation.NavigationView-->
-    <!--        android:id="@+id/nav_view"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:layout_gravity="start"-->
-    <!--        android:fitsSystemWindows="true"-->
-    <!--        app:headerLayout="@layout/nav_header_main"-->
-    <!--        app:menu="@menu/activity_main_drawer" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
-                    android:layout_marginTop="-2dp"
+                    android:layout_marginTop="-27dp"
                     android:adjustViewBounds="true"
                     android:alpha=".96"
                     android:scaleType="fitCenter"
@@ -82,14 +74,17 @@
             android:padding="28dp">
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/whiteback"
                 android:padding="5dp">
 
-                <TextView
-                    android:layout_width="match_parent"
+
+                <Spinner
+                    android:id="@+id/mySpinner"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
@@ -100,15 +95,7 @@
                     android:text="Select Course"
                     android:textAlignment="center"
                     android:textSize="25sp"
-
                     android:textStyle="normal" />
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/spinner" />
 
             </LinearLayout>
 
@@ -119,7 +106,8 @@
                 android:background="@drawable/whiteback"
                 android:padding="5dp">
 
-                <TextView
+                <Spinner
+                    android:id="@+id/spinner2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -128,91 +116,78 @@
                     android:fontFamily="@font/myrreg"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Select Semester"
+                    android:text="Select Batch"
                     android:textAlignment="center"
                     android:textSize="25sp"
 
                     android:textStyle="normal" />
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/spinner" />
-
             </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@drawable/whiteback"-->
+<!--                android:padding="5dp">-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinner3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:autoSizeTextType="uniform"-->
+<!--                    android:fontFamily="@font/myrreg"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="Select Semester"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:textStyle="normal" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@drawable/whiteback"-->
+<!--                android:padding="5dp">-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinner4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:autoSizeTextType="uniform"-->
+<!--                    android:fontFamily="@font/myrreg"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="Select Semester"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:textStyle="normal" />-->
+
+<!--            </LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@drawable/whiteback"
-                android:padding="5dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
-                    android:fontFamily="@font/myrreg"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Select Subject"
-                    android:textAlignment="center"
-                    android:textSize="25sp"
-
-                    android:textStyle="normal" />
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/spinner" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/whiteback"
-                android:padding="5dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
-                    android:fontFamily="@font/myrreg"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Select Year"
-                    android:textAlignment="center"
-                    android:textSize="25sp"
-
-                    android:textStyle="normal" />
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/spinner" />
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/greenback"
                 android:padding="5dp"
-                android:text="Submit"
-                android:textColor="#fff" />
+                app:srcCompat="@drawable/greenback">
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenback"
+                    android:text="Submit"
+                    android:textColor="#fff" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
