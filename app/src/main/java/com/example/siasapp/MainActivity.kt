@@ -3,15 +3,16 @@ package com.example.siasapp
 import android.os.Bundle
 import android.view.Menu
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.ui.AppBarConfiguration
-import com.google.android.material.navigation.NavigationView
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.content_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.nav_header_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,11 +22,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
-
-
-
-
-
+//        val nav_hed_var = findViewById<ImageView>(R.id.avatas_img)
+//        Glide.with(this).load("https://www.instagram.com/p/B5zsGgUH6tM/")
+//            .centerCrop().into(avatas_img)
 
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
