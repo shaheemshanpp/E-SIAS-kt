@@ -2,6 +2,7 @@ package com.example.siasapp
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Spinner
@@ -9,22 +10,32 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.ui.AppBarConfiguration
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.nav_header_main.*
 
-class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
+
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
-//        val nav_hed_var = findViewById<ImageView>(R.id.avatas_img)
-//        Glide.with(this).load("https://www.instagram.com/p/B5zsGgUH6tM/")
-//            .centerCrop().into(avatas_img)
+//        onOptionsItemSelected()
+
+
+//        val url: ImageView = findViewById(R.id.avatas_img)
+//        Glide.with(this).load("https://image.flaticon.com/icons/svg/535/535572.svg")//Avatar Image
+//            .into(url)
+//        Picasso.get().load("https://image.flaticon.com/icons/svg/535/535572.svg").into(avatas_img)
+//        Glide.with(this).load("https://image.flaticon.com/icons/svg/535/535572.svg")
+//            .into(avatas_img)
+
+
+
+
+
 
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
@@ -32,6 +43,16 @@ class MainActivity : AppCompatActivity() {
             drawerLayout.openDrawer(GravityCompat.START)
         }
 
+
+//        val avatar_image = findViewById<ImageView>(R.id.avatas_img)
+//        Glide.with(this).load("").into(avatar_image).view
+//        val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
+//        val imageView = ImageView(this)
+//        Glide.with(this).load("https://image.flaticon.com/icons/svg/535/535572.svg")
+//            .into(imageView)
+//        linearLayout.addView(imageView)
+
+//
 
         val selectCourse = arrayOf(
             "Select Course",
@@ -52,23 +73,6 @@ class MainActivity : AppCompatActivity() {
                 ArrayAdapter(this, android.R.layout.simple_spinner_item, selectCourse)
             spinner.adapter = arrayAdapter
 
-//            spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-//                override fun onItemSelected(
-//                    parent: AdapterView<*>,
-//                    view: View,
-////                    position: Int,
-//                    id: Long
-//                ) {
-//                    Toast.makeText(
-//                        this@Main3Activity,
-//                        getString(R.string.selected_item) + " " + selectCourse[position],
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//                }
-//
-//                override fun onNothingSelected(parent: AdapterView<*>) {
-//                    // Code to perform some action when nothing is selected
-//                }
         }
 
         val selectSemester = arrayOf("Select Semester", "1", "2", "3", "4", "5", "6")
@@ -81,49 +85,24 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-//        val selectSubject = arrayOf("Select Subject", " ")
-//        val spinner3 = findViewById<Spinner>(R.id.spinner3)
-//        if (spinner3 != null) {
-//            var  arrayAdapter =
-//                ArrayAdapter(this, android.R.layout.simple_spinner_item, selectSubject)
-//            spinner3.adapter = arrayAdapter
-//
-//
-//        }
-//
-//        val selectYear = arrayOf("Select Year", "2017", "2018", "2019")
-//        val spinner4 = findViewById<Spinner>(R.id.spinner4)
-//        if (spinner4 != null) {
-//            var  arrayAdapter =
-//                ArrayAdapter(this, android.R.layout.simple_spinner_item, selectYear)
-//            spinner4.adapter = arrayAdapter
-//
-//
-//        }
-
         submitBtn.setOnClickListener {
             Toast.makeText(this, "Opening the question paper...", Toast.LENGTH_LONG).show()
         }
-
-//        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-//        val navView: NavigationView = findViewById(R.id.nav_view)
-//        val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-//        appBarConfiguration = AppBarConfiguration(setOf(
-//                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-//        navView.setupWithNavController(navController)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-//    override fun onSupportNavigateUp(): Boolean {
-//        val navController = findNavController(R.id.nav_host_fragment)
-//        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+//        menuInflater.inflate(R.menu.main, menu)
+//        return true
 //    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection
+        return when (item.itemId) {
+            R.id.nav_home -> {
+                Toast.makeText(this,"Hello",Toast.LENGTH_SHORT).show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 }
